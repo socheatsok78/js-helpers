@@ -1,0 +1,8 @@
+{
+  "name": "js-helpers",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:socheatsok78/js-helpers.git",
+  "author": "Socheat Sok <alex@socheat.net>",
+  "license": "MIT"
+}
