@@ -5,7 +5,7 @@ My helper collections
 
 ### Hooks
 
-#### useEvent
+#### `useEvent`
 Register an event listener, by default event will attatched to `window` object.
 
 ```js
@@ -52,7 +52,7 @@ const event = useEvent({
 event()
 ```
 
-### useInterval
+### `useInterval`
 Repeatedly calls a function or executes a code snippet, with a fixed time delay between each call.
 
 ```js
@@ -72,4 +72,25 @@ const poll = useInterval(function() {
 
 // stop firing the callback
 poll()
+```
+
+### `useTimeout`
+Sets a timer which executes a function or specified piece of code once the timer expires.
+
+```js
+useTimeout(function() {
+    // do something
+}, 3000)
+```
+
+`useTimeout` returns a function that stops firing the callback:
+
+```js
+// execute callback every 3s
+const timer = useTimeout(function() {
+    // do something
+}, 3000)
+
+// stop firing the callback
+timer()
 ```
