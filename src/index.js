@@ -1,6 +1,8 @@
-import useEvent from './hooks/useEvent'
-import useInterval from './hooks/useInterval'
-import useTimeout from './hooks/useTimeout'
+import {
+    useEvent,
+    useInterval,
+    useTimeout
+} from './hooks'
 
 import {
     sleep,
