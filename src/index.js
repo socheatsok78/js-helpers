@@ -1,4 +1,8 @@
 import {
+    ObservableMixin
+} from './foundations'
+
+import {
     useEvent,
     useInterval,
     useTimeout
@@ -11,6 +15,9 @@ import {
 } from './utils'
 
 export {
+    // foundations
+    ObservableMixin,
+
     // hooks
     useEvent,
     useInterval,
