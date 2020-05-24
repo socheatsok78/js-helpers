@@ -1,4 +1,9 @@
 /**
+ * Perform no operation.
+ */
+export function noop(...args) {}
+
+/**
  * Invokes interceptor with the object, and then returns object.
  * @param {any} value values
  * @param {Function} fn callback
