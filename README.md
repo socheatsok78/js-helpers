@@ -187,3 +187,5 @@ async function doSomething() {
 
 doSomething()
 ```
+## License
+License under [MIT](LICENSE)
