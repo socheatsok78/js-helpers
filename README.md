@@ -104,7 +104,7 @@ Perform no operation.
 Why whould you need to use this? Here an example:
 
 ```js
-import { noop } from './shared'
+import { noop } from 'js-helpers'
 
 export let warn = noop
 
