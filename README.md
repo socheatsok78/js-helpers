@@ -9,6 +9,8 @@ My helper collections
 Register an event listener, by default event will attatched to `window` object.
 
 ```js
+import { useEvent } from 'js-helpers'
+
 useEvent({
     event: 'load',
     handler() {
@@ -20,6 +22,8 @@ useEvent({
 Register an event listener for `document` or `DOMElement`.
 
 ```js
+import { useEvent } from 'js-helpers'
+
 useEvent({
     event: 'load',
     handler() {
@@ -40,6 +44,8 @@ useEvent({
 `useEvent` returns a function that stops firing the callback:
 
 ```js
+import { useEvent } from 'js-helpers'
+
 // Register an event listener
 const event = useEvent({
     event: 'load',
@@ -56,6 +62,8 @@ event()
 Repeatedly calls a function or executes a code snippet, with a fixed time delay between each call.
 
 ```js
+import { useInterval } from 'js-helpers'
+
 // execute callback every 3s
 useInterval(function() {
     // do something
@@ -65,6 +73,8 @@ useInterval(function() {
 `useInterval` returns a function that stops firing the callback:
 
 ```js
+import { useInterval } from 'js-helpers'
+
 // execute callback every 3s
 const poll = useInterval(function() {
     // do something
@@ -78,6 +88,8 @@ poll()
 Sets a timer which executes a function or specified piece of code once the timer expires.
 
 ```js
+import { useTimeout } from 'js-helpers'
+
 useTimeout(function() {
     // do something
 }, 3000)
@@ -86,6 +98,8 @@ useTimeout(function() {
 `useTimeout` returns a function that stops firing the callback:
 
 ```js
+import { useTimeout } from 'js-helpers'
+
 // execute callback every 3s
 const timer = useTimeout(function() {
     // do something
@@ -122,6 +136,8 @@ Now when you call `warn` function, it only show log output during `development`.
 Invokes interceptor with the object, and then returns object.
 
 ```js
+import { tap } from 'js-helpers'
+
 const value = {}
 
 const newValue = tap(value, function(payload) {
@@ -134,6 +150,8 @@ const newValue = tap(value, function(payload) {
 Apply the callback if the given "value" is true.
 
 ```js
+import { when } from 'js-helpers'
+
 const value = {}
 
 when(value, function(payload) {
@@ -159,6 +177,8 @@ Async Sleep Function
 > Note: please use `sleep` is asynchronous
 
 ```js
+import { sleep } from 'js-helpers'
+
 async function doSomething() {
     // Sleep for 3s
     await sleep(3000)
