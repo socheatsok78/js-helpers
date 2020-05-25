@@ -1,8 +1,19 @@
 {
   "name": "@socheatsok78/js-helpers",
   "version": "1.0.0",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "repository": "git@github.com:socheatsok78/js-helpers.git",
   "author": "Socheat Sok <alex@socheat.net>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "install": "npm run build",
+    "prebuild": "rm -rf dist/",
+    "build": "babel src/ -d dist/",
+    "prepare": "yarn run build"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6"
+  }
 }
