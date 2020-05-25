@@ -6,7 +6,6 @@
   "author": "Socheat Sok <alex@socheat.net>",
   "license": "MIT",
   "scripts": {
-    "install": "npm run build",
     "prebuild": "rm -rf dist/",
     "build": "babel src/ -d dist/",
     "prepare": "yarn run build"
