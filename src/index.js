@@ -28,7 +28,7 @@ export {
 }
 
 // utils
-{
+export {
     noop,
     sleep,
     tap,
