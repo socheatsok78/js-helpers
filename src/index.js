@@ -1,16 +1,36 @@
-export {
+import {
     ObservableMixin
 } from './foundations'
 
-export {
+import {
     useEvent,
     useInterval,
     useTimeout
 } from './hooks'
 
-export {
+import {
     noop,
     sleep,
     tap,
     when
 } from './utils'
+
+// foundations
+export {
+    ObservableMixin
+}
+
+// hooks
+export {
+    useEvent,
+    useInterval,
+    useTimeout
+}
+
+// utils
+{
+    noop,
+    sleep,
+    tap,
+    when
+}
