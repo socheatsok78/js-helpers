@@ -1,14 +1,13 @@
-import {
-    ObservableMixin
-} from './foundations'
+import JsHelperPlugin from './vue'
+import { ObservableMixin } from './foundations'
 
-import {
+export {
     useEvent,
     useInterval,
     useTimeout
 } from './hooks'
 
-import {
+export {
     noop,
     sleep,
     tap,
@@ -17,20 +16,6 @@ import {
 
 // foundations
 export {
-    ObservableMixin
-}
-
-// hooks
-export {
-    useEvent,
-    useInterval,
-    useTimeout
-}
-
-// utils
-export {
-    noop,
-    sleep,
-    tap,
-    when
+    ObservableMixin,
+    JsHelperPlugin
 }
