@@ -3,6 +3,12 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+Object.defineProperty(exports, "JsHelperPlugin", {
+  enumerable: true,
+  get: function () {
+    return _vue.default;
+  }
+});
 Object.defineProperty(exports, "ObservableMixin", {
   enumerable: true,
   get: function () {
@@ -52,8 +58,12 @@ Object.defineProperty(exports, "when", {
   }
 });
 
+var _vue = _interopRequireDefault(require("./vue"));
+
 var _foundations = require("./foundations");
 
 var _hooks = require("./hooks");
 
 var _utils = require("./utils");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
