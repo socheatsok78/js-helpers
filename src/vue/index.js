@@ -6,7 +6,7 @@ const JsHelperPlugin = {
         if (this.installed) return
         this.installed = true
 
-        Vue.component('W', W)
+        Vue.component('W', new W())
     }
 }
 
