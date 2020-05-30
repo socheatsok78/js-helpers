@@ -1,10 +1,11 @@
-export default class W {
-    constructor() {
-        this.name = 'W'
-        this.props = ['child']
-    }
-
-    get template() {
+const W = {
+    name: 'W',
+    props: {
+        child: {
+            required: true
+        }
+    },
+    template() {
         return `
             <component :is="child">
                 <slot v-for="(_, name) in $slots" :name="name" :slot="name" />
@@ -13,3 +14,5 @@ export default class W {
         `
     }
 }
+
+export default W
