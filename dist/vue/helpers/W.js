@@ -4,14 +4,15 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
+const W = {
+  name: 'W',
+  props: {
+    child: {
+      required: true
+    }
+  },
 
-class W {
-  constructor() {
-    this.name = 'W';
-    this.props = ['child'];
-  }
-
-  get template() {
+  template() {
     return `
             <component :is="child">
                 <slot v-for="(_, name) in $slots" :name="name" :slot="name" />
@@ -20,6 +21,6 @@ class W {
         `;
   }
 
-}
-
-exports.default = W;
+};
+var _default = W;
+exports.default = _default;
