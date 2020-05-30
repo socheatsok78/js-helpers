@@ -15,7 +15,7 @@ const JsHelperPlugin = {
   install(Vue) {
     if (this.installed) return;
     this.installed = true;
-    Vue.component('W', _W.default);
+    Vue.component('W', new _W.default());
   }
 
 };
