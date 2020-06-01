@@ -54,5 +54,5 @@ function when(value, callback, defaultCallback) {
 
 
 function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve(ms), ms));
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
