@@ -41,5 +41,5 @@ export function when(value, callback, defaultCallback) {
  * @param {Number} ms Sleep in Millionsecond
  */
 export function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve(ms), ms));
+    return new Promise(resolve => setTimeout(resolve, ms));
 }
